@@ -1,3 +1,7 @@
+from github import Github
+g = Github("zhanarkaliyeva", "Irreplaceable1")
+for repo in g.get_user().get_repos():
+    print(repo.name)
 #Game. The player has to put each fruit in the right house, avoiding the wolves.
 import pygame
 
